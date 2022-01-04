@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>E aí, Cícero?</h1>
+      <img src="img/logo-tt.png" alt="Logo">
+    </header>
+
+    <input type="text" name="task" id="add-task" placeholder="Digite uma tarefa nova">
+    <button onclick="alert('Agora é com o Abner!')">+</button>
+
+    <h5>SUAS TAREFAS:</h5>
+
+    <div class="task">
+      <div class="status pending"></div>
+      <div class="text">Estudar ReactJS</div>
+      <img src="img/garbage.png" alt="Excluir" class="delete">
+    </div>
+
+    <div class="task">
+      <div class="status done"></div>
+      <div class="text">Estudar NodeJS</div>
+      <img src="img/garbage.png" alt="Excluir" class="delete">
+    </div>
+  </div>
+
+</body>
+
+</html>

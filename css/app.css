@@ -1,0 +1,112 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #002244;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 400px;
+  min-height: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task {
+  padding: 14px;
+  background: #006ca6;
+  border-radius: 12px;
+
+  margin-bottom: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.status.pending {
+  border: 4px solid #ffa000;
+}
+.status.done {
+  border: 4px solid #00542c;
+}
+.status.done::after {
+  content: '\2714';
+}
+
+.text {
+  flex-grow: 1;
+}
+
+
+.delete {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.delete:hover {
+  transform: rotate(16deg);
+}
+
+input, button {
+  border: none;
+  vertical-align: top;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  width: 334px;
+}
+
+button {
+  background: #ffc300;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
